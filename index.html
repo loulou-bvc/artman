@@ -1,14 +1,670 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
-</head>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="canonical" href="https://artman-paris.fr/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Entreprise de Rénovation Essonne Paris & Île-de-France (Devis Gratuit) | ARTMAN</title>
+  
+    <!-- Meta description avec Keywords + Appel à l'action -->
+    <meta name="description" content="Rénovation complète d'appartement et maison en Île-de-France. Devis gratuit, prix ferme et garantie décennale. Spécialiste cuisine, salle de bain et sols à Paris, Essonne et Hauts-de-Seine.">
+    <meta name="theme-color" content="#111111" />
+    <link rel="icon" href="images/favicon.ico" />
+  
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Lexend+Tera:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  
+    <!-- Styles CSS (Version mise à jour 5.1 pour le cache) -->
+    <link rel="stylesheet" href="style.css?v=5.1" />
+    <link rel="stylesheet" href="table-geo.css" /> <!-- Déplacé ici pour la conformité W3C -->
+  
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            /* --- NODE 1 : LE SITE WEB --- */
+            "@type": "WebSite",
+            "@id": "https://artman-paris.fr/#website",
+            "url": "https://artman-paris.fr/",
+            "name": "ARTMAN Rénovation",
+            "description": "Expert rénovation intérieure Essonne et IDF.",
+            "inLanguage": "fr-FR",
+            "publisher": {
+              "@id": "https://artman-paris.fr/#organization"
+            }
+          },
+          {
+            /* --- NODE 2 : LA PAGE D'ACCUEIL --- */
+            "@type": "WebPage",
+            "@id": "https://artman-paris.fr/#webpage",
+            "url": "https://artman-paris.fr/",
+            "name": "Entreprise de Rénovation Essonne Paris & Île-de-France (Devis Gratuit) | ARTMAN",
+            "isPartOf": {
+              "@id": "https://artman-paris.fr/#website"
+            },
+            "about": {
+              "@id": "https://artman-paris.fr/#organization"
+            },
+            "description": "Rénovation complète d'appartement et maison en Île-de-France. Devis gratuit, prix ferme et garantie décennale. Spécialiste cuisine, salle de bain et sols à Paris, Essonne et Hauts-de-Seine.",
+            "primaryImageOfPage": {
+              "@id": "https://artman-paris.fr/#primaryimage"
+            },
+            "inLanguage": "fr-FR"
+          },
+          {
+            /* --- NODE 3 : L'IMAGE PRINCIPALE --- */
+            "@type": "ImageObject",
+            "@id": "https://artman-paris.fr/#primaryimage",
+            "url": "https://artman-paris.fr/images/cuisine-2.png",
+            "width": 1200,
+            "height": 800,
+            "caption": "Rénovation de cuisine moderne par ARTMAN"
+          },
+          {
+            /* --- NODE 4 : L'ENTREPRISE (Le cœur du SEO) --- */
+            "@type": "GeneralContractor",
+            "@id": "https://artman-paris.fr/#organization",
+            "name": "ARTMAN Rénovation",
+            "legalName": "ARTMAN",
+            "description": "Entreprise de rénovation tous corps d'état spécialisée dans l'aménagement intérieur, la cuisine, la salle de bain et la rénovation complète d'appartements et maisons.",
+            "url": "https://artman-paris.fr/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://artman-paris.fr/images/logo-artman.png"
+            },
+            "image": "https://artman-paris.fr/images/cuisine-2.png",
+            "telephone": "+33686451173",
+            "email": "artman.pro2023@gmail.com",
+            "priceRange": "€€",
+            "slogan": "Votre tranquillité, notre engagement.",
+            
+            /* IDENTIFICATION GOOGLE MAPS (LUDOCID) */
+            "hasMap": "https://www.google.com/maps?cid=4823055375782782825",
+            
+            /* CREDIBILITE LEGALE (SIRET) */
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "SIRET",
+              "value": "95323548800012"
+            },
+      
+            /* MOYENS DE PAIEMENT */
+            "paymentAccepted": ["Espèces", "Virement bancaire", "Chèque"],
+      
+            /* RESEAUX SOCIAUX (Remplacer par tes vrais liens si différents) */
+            "sameAs": [
+              "https://www.facebook.com/profile.php?id=YOUR_ID",
+              "https://www.instagram.com/artman_renovation/",
+              "https://www.linkedin.com/company/artman-renovation"
+            ],
+      
+            /* FONDATEUR */
+            "founder": {
+              "@type": "Person",
+              "name": "Direction Artman"
+            },
+      
+            /* ADRESSE PHYSIQUE */
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Residence les millepertuis B4",
+              "addressLocality": "LES ULIS",
+              "postalCode": "91940",
+              "addressRegion": "Île-de-France",
+              "addressCountry": "FR"
+            },
+      
+            /* LOCALISATION GPS */
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "48.683389",
+              "longitude": "2.172972",
+              "name": "Siège Artman Rénovation Les Ulis"
+            },
+            
+            /* HORAIRES */
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "08:30",
+              "closes": "19:30"
+            },
+      
+            /* ZONE D'INTERVENTION ELARGIE (Avec Wikidata) */
+            "areaServed": [
+              /* Région */
+              {
+                  "@type": "AdministrativeArea", 
+                  "name": "Île-de-France", 
+                  "sameAs": "https://www.wikidata.org/wiki/Q13917"
+              },
+              /* Départements */
+              { "@type": "AdministrativeArea", "name": "Essonne", "identifier": "91", "sameAs": "https://www.wikidata.org/wiki/Q3368" },
+              { "@type": "AdministrativeArea", "name": "Hauts-de-Seine", "identifier": "92", "sameAs": "https://www.wikidata.org/wiki/Q12543" },
+              { "@type": "AdministrativeArea", "name": "Val-de-Marne", "identifier": "94", "sameAs": "https://www.wikidata.org/wiki/Q12556" },
+              { "@type": "AdministrativeArea", "name": "Yvelines", "identifier": "78", "sameAs": "https://www.wikidata.org/wiki/Q12836" },
+              /* Villes Clés */
+              { "@type": "City", "name": "Paris", "identifier": "75000", "sameAs": "https://www.wikidata.org/wiki/Q90" },
+              { "@type": "City", "name": "Les Ulis", "identifier": "91940", "sameAs": "https://www.wikidata.org/wiki/Q208608" },
+              { "@type": "City", "name": "Orsay", "identifier": "91400" },
+              { "@type": "City", "name": "Massy", "identifier": "91300" },
+              { "@type": "City", "name": "Versailles", "identifier": "78000" },
+              { "@type": "City", "name": "Boulogne-Billancourt", "identifier": "92100" }
+            ],
+      
+            /* EXPERTISE TECHNIQUE (Pour l'IA) */
+            "knowsAbout": [
+              "Rénovation intérieure",
+              "Plomberie sanitaire",
+              "Électricité générale",
+              "Pose de carrelage",
+              "Peinture en bâtiment",
+              "Installation de cuisine équipée",
+              "Rénovation de salle de bain",
+              "Isolation thermique",
+              "Pose de parquet",
+              "Menuiserie intérieure"
+            ],
+      
+            /* CATALOGUE D'OFFRES */
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Services de Rénovation",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Rénovation de Cuisine",
+                    "description": "Conception et pose de cuisine sur-mesure."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Rénovation de Salle de Bain",
+                    "description": "Douche à l'italienne, carrelage et plomberie."
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Rénovation Complète Appartement",
+                    "description": "Remise à neuf totale tous corps d'état."
+                  }
+                }
+              ]
+            },
+      
+            /* AVIS / RATING */
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "24",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+      
+            /* ACTION CONVERSION (DEVIS) */
+            "potentialAction": {
+              "@type": "QuoteAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://artman-paris.fr/pages/devis-travaux.html"
+              }
+            }
+          },
+          {
+            /* --- NODE 5 : FAQ --- */
+            "@type": "FAQPage",
+            "@id": "https://artman-paris.fr/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Le déplacement pour le devis est-il payant ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Non, le déplacement et l'établissement du devis sont 100% gratuits partout en Île-de-France (Paris 75, Essonne 91, Hauts-de-Seine 92, Val-de-Marne 94)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Vos travaux de rénovation sont-ils assurés ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolument. Artman Rénovation est couvert par une Responsabilité Civile Professionnelle (RC Pro) et une Garantie Décennale obligatoire."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien coûte une rénovation au m2 en Île-de-France ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le prix varie selon les finitions. Comptez entre 800€ et 1200€ du m2 pour un rafraîchissement, et entre 1500€ et 2500€ du m2 pour une rénovation complète."
+                }
+              }
+            ]
+          }
+        ]
+      }
+      </script>
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="ARTMAN – Rénovation intérieure en Île-de-France" />
+    <meta property="og:description" content="Découvrez nos réalisations et obtenez un devis gratuit pour vos travaux de rénovation de cuisines, salles de bain et plus en Île-de-France." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://artman-paris.fr/" />
+    <meta property="og:image" content="https://artman-paris.fr/images/cuisine-2.png" />
+    <meta property="og:site_name" content="Artman Rénovation" />
+  
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ARTMAN – Rénovation intérieure en Île-de-France">
+    <meta name="twitter:description" content="Découvrez nos réalisations et obtenez un devis gratuit pour vos travaux de rénovation.">
+    <meta name="twitter:image" content="https://artman-paris.fr/images/cuisine-2.png">
+  </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+  <!-- =========================================================
+       NAVBAR
+  ========================================================== -->
+  <nav class="navbar">
+    <div class="container">
+      <!-- LOGO -->
+      <a href="#top" class="logo">
+        <img src="images/artman-logo.png" alt="Logo Artman" height="60">
+      </a>
+      
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#contact">Contact</a>
+        <a href="pages/devis-travaux.html" class="btn-devis">Mon devis</a>
+      </div>
+      <button id="menu-btn" class="burger" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- MENU MOBILE (Caché sur PC) -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="#services">Services</a>
+    <a href="#realisations">Réalisations</a>
+    <a href="#contact">Contact</a>
+    <a href="pages/devis-travaux.html" class="btn-devis">Mon devis</a>
+  </div>
+
+  <!-- =========================================================
+       HERO
+  ========================================================== -->
+  <header id="top" class="hero">
+    <div class="hero-overlay"></div> <!-- C'est ce div qui crée le filtre sombre -->
+    <div class="hero-content">
+      <p class="kicker">Intervention rapide : Essonne (91), Paris (75) & Hauts-de-Seine (92)</p>
+      
+      <div class="brand-logo">
+          <img src="images/artman-logo.png" alt="Logo Artman Rénovation">
+      </div>
+      <h1 class="hero-title">
+        <span class="baseline">
+          Entreprise de <span class="text-highlight">Rénovation</span> en Essonne & Île-de-France
+        </span>
+      </h1>
+      
+      <p class="hero-sub">
+        Spécialistes de la <strong>rénovation complète d'appartement et maison</strong>.<br>
+        Cuisine, pose de fenêtres et volets, salle de bain, peinture et sols.
+      </p>
+      <div class="hero-actions">
+        <a href="pages/devis-travaux.html" class="btn-primary">Obtenir mon devis gratuit</a>
+        <a href="tel:+33686451173" class="btn-secondary-glass">📞 06 86 45 11 73</a>
+      </div>
+      
+      <div class="hero-trust-badges">
+        <span>✓ Devis sous 48h</span> • <span>✓ Tout corps d'état</span> • <span>✓ Artisans Qualifiés</span>
+      </div>
+    </div>
+</header>
+
+  <!-- =========================================================
+       SERENITY SECTION
+  ========================================================== -->
+  <section class="serenity-section">
+    <div class="container serenity-container">
+      <div class="section-header">
+        <h2>Nos engagements pour vos travaux</h2>
+        <p>Chez Artman, nous nous engageons sur bien plus que la qualité des travaux. Nous nous engageons sur votre tranquillité d'esprit.</p>
+      </div>
+      <div class="serenity-grid">
+        <div class="serenity-item">
+          <div class="serenity-icon-wrapper"><svg class="serenity-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div>
+          <h3 class="serenity-item-title">Assurances Certifiées</h3>
+          <p class="serenity-item-text">Votre patrimoine est sécurisé pour 10 ans.</p>
+        </div>
+        <div class="serenity-item">
+          <div class="serenity-icon-wrapper"><svg class="serenity-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
+          <h3 class="serenity-item-title">Délais Respectés</h3>
+          <p class="serenity-item-text">Un planning précis pour une livraison à la date convenue.</p>
+        </div>
+        <div class="serenity-item">
+          <div class="serenity-icon-wrapper"><svg class="serenity-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg></div>
+          <h3 class="serenity-item-title">Budget Bloqué</h3>
+          <p class="serenity-item-text">Le montant signé sur le devis est le montant exact que vous paierez.</p>
+        </div>
+        <div class="serenity-item">
+          <div class="serenity-icon-wrapper"><svg class="serenity-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg></div>
+          <h3 class="serenity-item-title">Interlocuteur Unique</h3>
+          <p class="serenity-item-text">Un chef de projet dédié pour suivre votre chantier de A à Z.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       RÉALISATIONS (Ambiance : Galerie Lumière)
+  ========================================================== -->
+  <section id="realisations" class="realisations-section">
+    <div class="container realisations-container">
+      <div class="section-header">
+        <h2>Notre dernière réalisation sur-mesure à Paris.</h2>
+        <p>De la conception à la lumière - un studio de tournage conçu de A à Z.</p>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel-wrapper">
+          <div class="carousel-track">
+             <img src="images/estrade-de-tournage.png" width="400" height="300" alt="Rénovation plateau tournage Paris">
+             <img src="images/s-maquillage 1.png" width="400" height="300" alt="Création loge maquillage" loading="lazy">
+             <img src="images/entre-table.jpeg" width="400" height="300" alt="Aménagement espace détente" loading="lazy">
+             <img src="images/coin-detente.jpeg" width="400" height="300" alt="Rénovation coin lecture" loading="lazy">
+             <img src="images/cuisine.png" width="400" height="300" alt="Installation cuisine équipée" loading="lazy">
+             <img src="images/vitrerie-exterieur.png" width="400" height="300" alt="Pose vitrerie extérieure" loading="lazy">
+             <img src="images/sdb-lavabo.png" width="400" height="300" alt="Rénovation salle de bain design" loading="lazy">
+           </div>
+         </div>
+         <button class="carousel-btn prev" aria-label="Précédent">‹</button>
+         <button class="carousel-btn next" aria-label="Suivant">›</button>
+       </div>
+     </div>
+   </section>
+
+   <section id="why-us" class="why-us-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Pourquoi nous choisir ?</h2>
+        <p>Notre engagement : l'excellence, la transparence et votre satisfaction totale.</p>
+      </div>
+      
+      <div class="why-us-grid">
+        <!-- ITEM 1 : Rénovation Complète -->
+        <div class="why-us-item">
+          <div class="why-us-icon-wrapper">
+            <svg class="why-us-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V3m0 18v-3" />
+            </svg>
+          </div>
+          <h3>Expertise Confirmée</h3>
+          <p>
+            Des artisans qualifiés et une gestion de projet rigoureuse, idéale pour une 
+            <a href="services/renovation-interieure.html" class="text-link" title="Voir nos offres de rénovation complète">rénovation complète d'appartement</a> 
+            sans stress.
+          </p>
+        </div>
+  
+        <!-- ITEM 2 : Cuisine & SDB -->
+        <div class="why-us-item">
+          <div class="why-us-icon-wrapper">
+            <svg class="why-us-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h3>Matériaux de Qualité</h3>
+          <p>
+            Sélection rigoureuse pour garantir la longévité de votre 
+            <a href="services/renovation-cuisine.html" class="text-link">cuisine équipée</a> 
+            ou de votre 
+            <a href="services/salle-de-bain.html" class="text-link">salle de bain</a> design.
+          </p>
+        </div>
+  
+        <!-- ITEM 3 : Peinture & Devis -->
+        <div class="why-us-item">
+          <div class="why-us-icon-wrapper">
+            <svg class="why-us-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3>Devis Transparent</h3>
+          <p>
+            Estimation claire, détaillée et sans surprise. Prix fixe garanti pour vos 
+            <a href="services/peinture-cloison-interieure.html" class="text-link">travaux de peinture</a> 
+            et finitions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       AVIS CLIENTS (Ambiance : Organique Confiance)
+  ========================================================== -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container testimonials-container">
+      <div class="section-header">
+        <h2>Ils nous ont fait confiance</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <h4>Nathalie Dubois</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p>"Une équipe très professionnelle. La rénovation de ma cuisine est une réussite. Délais respectés."</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <h4>Julien Martin</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p>"Artman a transformé mon vieil appartement. Le chef de projet était de très bon conseil. Je recommande !"</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <h4>Caroline Lefevre</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p>"Très satisfaite de la rénovation de ma salle de bain. Travail soigné, finitions impeccables."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SERVICES
+  ========================================================== -->
+  
+  <section id="services" class="services-section">
+    <div class="services-container">
+      <header class="services-header">
+        <h2>Nos services tout corps d'état</h2>
+        <p>Expertise, précision et souci du détail dans chaque projet.</p>
+      </header>
+      
+      <!-- Service 1 -->
+      <a href="services/pose-fenetres.html" class="service-item">
+        <div class="service-text">
+          <h3>Pose de Fenêtres & Menuiseries</h3>
+          <p>ARTMAN sublime votre habitat avec des fenêtres et portes sur mesure. Optimisez votre isolation thermique et phonique tout en valorisant l'esthétique de votre propriété.</p>
+        </div>
+        <div class="service-image"><img src="images/portes-fenetres.png" alt="Installation de portes et fenêtres" loading="lazy"></div>
+      </a>
+
+      <!-- Service 2 -->
+      <a href="services/renovation-interieure.html" class="service-item alt">
+        <div class="service-text">
+          <h3>Rénovation intérieure</h3>
+          <p>Transformez votre espace de vie avec la rénovation sur-mesure. Du concept à la réalisation, nous créons des intérieurs uniques qui reflètent votre style.</p>
+        </div>
+        <div class="service-image"><img src="images/appartement-renove.png" alt="Rénovation appartement complète" loading="lazy"></div>
+      </a>
+
+      <!-- Service 3 -->
+      <a href="services/salle-de-bain.html" class="service-item">
+        <div class="service-text">
+          <h3>Création de Salle de bain</h3>
+          <p>De la petite rénovation à la création complète, nous optimisons l'espace et la lumière pour une salle de bain moderne et fonctionnelle.</p>
+        </div>
+        <div class="service-image"><img src="images/sdb-2.png" alt="Salle de bain moderne" loading="lazy"></div>
+      </a>
+
+      <!-- Service 4 -->
+      <a href="services/renovation-cuisine.html" class="service-item alt">
+        <div class="service-text">
+          <h3>Cuisine équipée</h3>
+          <p>Cuisinez vos passions avec une cuisine sur mesure. Nous créons des espaces esthétiques et ergonomiques, parfaitement adaptés à votre style de vie.</p>
+        </div>
+        <div class="service-image"><img src="images/cuisine.png" alt="Cuisine moderne îlot central" loading="lazy"></div>
+      </a>
+
+      <!-- Service 5 -->
+      <a href="services/peinture-cloison-interieure.html" class="service-item">
+        <div class="service-text">
+          <h3>Peinture & murs</h3>
+          <p>Donnez vie à vos murs avec nos travaux de peinture et finitions. Laissez nos experts transformer vos intérieurs en tableaux vivants.</p>
+        </div>
+        <div class="service-image"><img src="images/peinture-mur.png" alt="Peinture murale" loading="lazy"></div>
+      </a>
+
+      <!-- Service 6 -->
+      <a href="services/parquet-carrelage.html" class="service-item alt">
+        <div class="service-text">
+          <h3>Pose de Sols</h3>
+          <p>Sublimez vos intérieurs avec la pose de sols sur mesure : parquet, carrelage, béton ciré. Une base solide et élégante pour votre habitat.</p>
+        </div>
+        <div class="service-image"><img src="images/escalier-en-bois.png" alt="Pose de parquet" loading="lazy"></div>
+      </a>
+    </div>
+  </section>
+  <!-- =========================================================
+       PROCESSUS
+  ========================================================== -->
+  <!-- =========================================================
+       PROCESSUS (Textes Originaux & Geo Optimized)
+  ========================================================== -->
+  <section id="process" class="process-section">
+    <div class="container process-container">
+      <div class="process-header">
+        <h2>Comment se déroule votre rénovation avec Artman ?</h2>
+        <p>Un processus maîtrisé en 5 étapes pour garantir délais, budget et qualité, sans stress.</p>
+      </div>
+
+      <ol class="process-steps">
+        <li class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Visite technique & Écoute</h3>
+            <p>Nous nous déplaçons <strong>gratuitement</strong> chez vous (IDF) pour étudier la faisabilité technique, prendre les cotes et comprendre vos envies.</p>
+          </div>
+        </li>
+        <li class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Devis Détaillé & Planning</h3>
+            <p>Sous 48h, vous recevez une estimation transparente : matériaux, main d'œuvre et un <strong>calendrier d'intervention fixe</strong>. Pas de coûts cachés.</p>
+          </div>
+        </li>
+        <li class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Protection & Démarrage</h3>
+            <p>Avant le premier coup de marteau, nous protégeons intégralement vos parties communes et mobiliers. Le chantier démarre en toute sécurité.</p>
+          </div>
+        </li>
+        <li class="step-card">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Exécution & Suivi</h3>
+            <p>Votre <strong>chef de projet dédié</strong> coordonne les artisans (plomberie, élec, peinture). Vous recevez des points d'avancement réguliers.</p>
+          </div>
+        </li>
+        <li class="step-card">
+          <div class="step-number">05</div>
+          <div class="step-content">
+            <h3>Livraison</h3>
+            <p>Nettoyage fin de chantier inclus. Nous validons ensemble les finitions lors de la réception des travaux.</p>
+          </div>
+        </li>
+      </ol>
+      
+      <div class="process-cta">
+        <a href="pages/devis-travaux.html" class="btn-primary">Mon devis gratuit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT CTA
+  ========================================================== -->
+  <section id="contact" class="contact-section-cta">
+    <div class="contact-container-cta">
+        <h2>Prêt à démarrer votre projet ?</h2>
+        <p>Cliquez ici pour obtenir un devis personnalisé et sans engagement.</p>
+        <a href="pages/devis-travaux.html" class="btn-primary-cta">Obtenir mon devis</a>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FAQ & GEO
+  ========================================================== -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="faq-header"><h2>Questions Fréquentes</h2></div>
+      <div class="faq-grid">
+        <div class="faq-item"><h3>Le déplacement est-il payant ?</h3><p>Non, 100% gratuit en Île-de-France.</p></div>
+        <div class="faq-item"><h3>Vos travaux sont-ils assurés ?</h3><p>Oui, Résponsabilité Civile Pro.</p></div>
+        <div class="faq-item"><h3>Quels sont vos délais ?</h3><p>Démarrage sous 1 à 2 semaines.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="geo-section">
+      <div class="container geo-container">
+          <h3 class="geo-title">Estimations moyennes <span class="highlight">(Île-de-France)</span></h3>
+          <div class="geo-table-wrapper">
+              <table class="geo-table">
+                  <thead><tr><th>Type de Projet</th><th>Délai Moyen</th><th>Inclus</th></tr></thead>
+                  <tbody>
+                      <tr><td class="project-name">Rénovation Salle de Bain</td><td class="timeframe">2 à 3 semaines</td><td>Dépose, Plomberie, Carrelage</td></tr>
+                      <tr><td class="project-name">Rénovation Cuisine</td><td class="timeframe">2 à 4 semaines</td><td>Électricité, Plomberie, Meubles</td></tr>
+                      <tr><td class="project-name">Rénovation Complète</td><td class="timeframe">1 à 2 mois</td><td>Tous corps d'état</td></tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <address>
+        <p>© <span id="year">2025</span> ARTMAN — Rénovation Île-de-France</p>
+        <p>Residence les millpertuis B4, 91940 LES ULIS</p>
+        <a href="tel:+33686451173">06.86.45.11.73</a><br>
+        <a href="mailto:artman.pro2023@gmail.com">artman.pro2023@gmail.com</a>
+      </address>
+      <p class="footer-legal-info">SIRET : 95323548800012 | Assurances BPCE IARD.</p>
+      <div class="footer-zones">
+        <h4>Zones d'intervention</h4>
+        <p>Paris (75) • Les Ulis • Boulogne-Billancourt • Neuilly-sur-Seine • Versailles • Essonne (91) • Hauts-de-Seine (92).</p>
+      </div>
+    </div>
+    <a href="pages/legal.html" class="footer-legal-link">Mentions Légales</a>
+  </footer>
+
+  <script src="main.js" defer></script>
 </body>
 </html>

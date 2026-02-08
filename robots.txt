@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://artman-7fd24.web.app/sitemap.xml
